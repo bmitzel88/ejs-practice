@@ -16,7 +16,8 @@ app.use(express.static('public'));
 // Define a default route ("/")
 app.get('/', (req, res) => {
 
-  res.render('home');
+    const person = ({ name: 'Donald Duck'}, { occupation: 'plumber'}, {favoriteColor: 'blue'});
+    res.render('home', {person});
 
 });
 
