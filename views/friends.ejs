@@ -6,19 +6,25 @@
     <title>Friends</title>
 </head>
 <body>
+    <!-- Include partials/header -->
+    <%- include('partials/header') %>
 
-    <h1>Your friends:</h1>
+    <main>
+        <h1>Your friends:</h1>
 
-    <ul>
+        <ul>
 
-        <% friends.forEach(friend=> { %>
+            <% friends.forEach(friend=> { %>
 
-            <li><%= friend %></li>
+                <li><%= friend %></li>
 
-        <% }) %>
+            <% }) %>
 
-       
+        
 
-    </ul>
+        </ul>
+    </main>
+    <!-- Include partials/footer -->
+    <%- include('partials/footer') %>
 </body>
 </html>
